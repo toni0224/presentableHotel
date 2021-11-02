@@ -786,7 +786,9 @@ e</h4>
 								
 							</ul>
 			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62879.681806229746!2d-84.14836462783931!3d9.935612431138155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e49edef4b3eb%3A0xc8956f3f7bdc3793!2sRadisson+San+Jose-Costa+Rica+Hotel+moderno+con+2%E2%80%A6!5e0!3m2!1ses!2ssv!4v1517008417899" ></iframe>
+			
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4612.512704286114!2d-72.71094771212259!3d-16.624889514788908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9140ffda15b03cc9%3A0x5c313c4d585c2280!2sBelen%20Camana!5e0!3m2!1ses-419!2spe!4v1635863151746!5m2!1ses-419!2spe"></iframe>
+			
 		</div>
 		<div class="clearfix"></div>
 	</div>
