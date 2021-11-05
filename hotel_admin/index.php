@@ -1,7 +1,34 @@
 <?php
 include('db.php');
 
+$today=date('d/m/y');
+
+//variable numerica
+$celular=983199940;
+
+//variable string
+$hotel="CAMANÁ IN";
+$departamento="Arequipa";
+$provincia="Camaná";
+$distrito="Camaná";
+
+
+$urlFacebook="https://www.facebook.com/elizabeth.vilcarodo";
+$urlInstagram="https://www.facebook.com/elizabeth.vilcarodo";
+
+$email="les18lie97@gmail.com";
+
+//ARREGLO
+$estado = array("DISPONIBLE", "ULTIMOS", "AGOTADOS");
+
+//ARREGLO CON PROPIEDAD
+$botones = array("botones1"=>"Acerca de","botones2"=>"Contamos con","botones3"=>"Galería","botones4"=>"Habitaciones","botones5"=>"Contáctenos");
+
+
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,15 +59,15 @@ include('db.php');
 <div class="banner-top">
 			<div class="social-bnr-agileits">
 				<ul class="social-icons3">
-								<li><a href="https://www.facebook.com/" class="fa fa-facebook icon-border facebook"> </a></li>
-								<li><a href="https://twitter.com/" class="fa fa-twitter icon-border twitter"> </a></li>
-								<li><a href="https://plus.google.com/u/0/" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+								<li><a href="<?php echo $urlFacebook?>" class="fa fa-facebook icon-border facebook"> </a></li>
+								<li><a href="<?php echo $urlInstagram?>" class="fa fa-twitter icon-border twitter"> </a></li>
+								<li><a href="<?php echo $urlFacebook?>" class="fa fa-google-plus icon-border googleplus"> </a></li> 
 							</ul>
 			</div>
 			<div class="contact-bnr-w3-agile">
 				<ul>
 					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@facturacionweb.site">info@facturacionweb.site</a></li>
-					<li><i class="fa fa-phone" aria-hidden="true"></i>983199940</li>	
+					<li><i class="fa fa-phone" aria-hidden="true"></i><?php echo $celular?></li>	
 					<li class="s-bar">
 						<div class="search">
 							<input class="search_box" type="checkbox" id="search_box">
@@ -73,12 +100,12 @@ include('db.php');
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--iris">
 						<ul class="nav navbar-nav menu__list">
-							<li class="menu__item menu__item--current"><a href="#home" class="menu__link">Camaná In</a></li>
-							<li class="menu__item"><a href="#about" class="menu__link scroll">Acerca de</a></li>
-							<li class="menu__item"><a href="#contamosCon" class="menu__link scroll">Contamos con</a></li>
-							<li class="menu__item"><a href="#gallery" class="menu__link scroll">Galería</a></li>
-							<li class="menu__item"><a href="#rooms" class="menu__link scroll">Habitaciones</a></li>
-							<li class="menu__item"><a href="#contact" class="menu__link scroll">Contáctenos</a></li>
+							<li class="menu__item menu__item--current"><a href="#home" class="menu__link"><?php echo $hotel?></a></li>
+							<li class="menu__item"><a href="#about" class="menu__link scroll"><?php echo "$botones[botones1]"?></a></li>
+							<li class="menu__item"><a href="#contamosCon" class="menu__link scroll"><?php echo "$botones[botones2]"?></a></li>
+							<li class="menu__item"><a href="#gallery" class="menu__link scroll"><?php echo "$botones[botones3]"?></a></li>
+							<li class="menu__item"><a href="#rooms" class="menu__link scroll"><?php echo "$botones[botones4]"?></a></li>
+							<li class="menu__item"><a href="#contact" class="menu__link scroll"><?php echo "$botones[botones5]"?></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -312,7 +339,7 @@ include('db.php');
 .</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
-								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+								<li><a href="<?php echo $urlFacebook?>" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
 								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
 								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
@@ -329,10 +356,10 @@ include('db.php');
 							<span>Recepcionista
 </span>
 							<p>Estamos para ser de  tus vaciones las mej
-							or porque savemos que te esuferzas trabajando.te ofrecemos lo mejor .</p>	
+							or, porque savemos que te esuferzas trabajando.te ofrecemos lo mejor .</p>	
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
-								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+								<li><a href="<?php echo $urlFacebook?>" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
 								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
 								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
@@ -350,7 +377,7 @@ include('db.php');
 							<p>Que eresperas para disfrutar los momentos mas inolvidables de tu vida.</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
-								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+								<li><a href="<?php echo $urlFacebook?>" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
 								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
 								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
@@ -368,7 +395,7 @@ include('db.php');
 							<p>Porque siempre pensamos primero en nuestros clientes mesclamos comodidad con un precio economico.</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
-								<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+								<li><a href="<?php echo $urlFacebook?>" class="fa fa-facebook icon-border facebook"> </a></li>
 								<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
 								<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
 								<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
@@ -774,9 +801,9 @@ e</h4>
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
 			<h4>Conectate con nosotros
 </h4>
-			<p class="contact-agile1"><strong>Teléfono :</strong>+504 7050-8888</p>
-			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:info@facturacionweb.site">info@facturacionweb.site</a></p>
-			<p class="contact-agile1"><strong>Direccion :</strong> lima, surco</p>
+			<p class="contact-agile1"><strong>Teléfono :</strong><?php echo $celular?></p>
+			<p class="contact-agile1"><strong>Email :</strong> <a href="mailto:info@facturacionweb.site"><?php echo $email?></a></p>
+			<p class="contact-agile1"><strong>Direccion :</strong> <?php echo $departamento?>, <?php echo $provincia?>, <?php echo $distrito?></p>
 																
 			<div class="social-bnr-agileits footer-icons-agileinfo">
 				<ul class="social-icons3">
@@ -795,7 +822,7 @@ e</h4>
 </section>
 <!-- /contact -->
 			<div class="copy">
-		        <p>© 2018  <a href="index.php">AMENECER</a> </p>
+		        <p>© 2021  <a href="index.php">CAMANÁ IN</a> </p>
 		    </div>
 <!--/footer -->
 <!-- js -->
