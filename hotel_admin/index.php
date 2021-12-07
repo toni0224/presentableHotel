@@ -26,6 +26,32 @@ $botones = array("botones1"=>"Acerca de","botones2"=>"Contamos con","botones3"=>
 
 
 ?>
+<?php
+#clase
+class OFERTAS{
+    #propiedades
+    public $OFERTA1;
+    
+
+    #Metodo
+    public function mostrar(){
+        echo"$this->OFERTA1";
+    }
+}
+#objeto
+$a =new OFERTAS();
+$a-> OFERTA1= "Dormitorios Principales";
+$a-> mostrar();
+
+$b =new OFERTAS();
+$b-> OFERTA1= "Balcon con vista al mar";
+
+$c =new OFERTAS();
+$c-> OFERTA1= "Desayunos Diarios";
+
+$d =new OFERTAS();
+$d-> OFERTA1= "Cobertura Wiffi Veloz";
+?>
 
 
 
@@ -216,28 +242,28 @@ $botones = array("botones1"=>"Acerca de","botones2"=>"Contamos con","botones3"=>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">DORMITORIOS PRINCIPALES</h4>
+							<h4 class="cbp-ig-title"><?php $a-> mostrar();?></h4>
 							<span class="cbp-ig-category">AMANECER</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_cube"></span>
-							<h4 class="cbp-ig-title">BALCON CON VISTA AL MAR</h4>
+							<h4 class="cbp-ig-title"><?php $b-> mostrar();?></h4>
 							<span class="cbp-ig-category">AMANECER</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_users"></span>
-							<h4 class="cbp-ig-title">DESAYUNOS DIARIOS</h4> 
+							<h4 class="cbp-ig-title"><?php $c-> mostrar();?></h4> 
 							<span class="cbp-ig-category">AMANECER</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_ticket"></span>
-							<h4 class="cbp-ig-title">COBERTURA WIFI VELOZ</h4>
+							<h4 class="cbp-ig-title"><?php $d-> mostrar();?></h4>
 							<span class="cbp-ig-category">AMANECER
 </span>
 						</div>
@@ -253,8 +279,7 @@ $botones = array("botones1"=>"Acerca de","botones2"=>"Contamos con","botones3"=>
 				   <div class="ab-w3l-spa">
                             <h3 class="title-w3-agileits title-black-wthree">Acerca de nuestro SUN RISE
 </h3> 
-						   <p class="about-para-w3ls"> Lorem Ipsum es simplemente un texto simulado de la industria de impresión y composición tipográfica. Laca tempient vestibulum blandit faucibus. Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, en imperdiet urna
-</p>
+						   <p class="about-para-w3ls">Somos su punto de conexión. Con gran variedad de instalaciones y espacios flexibles para reuniones en multitud de destinos, le ayudaremos a aprovechar al máximo el tiempo que pasen juntos.</p>
 						   <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
 										<div class="w3l-slider-img">
 											<img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
@@ -332,11 +357,10 @@ $botones = array("botones1"=>"Acerca de","botones2"=>"Contamos con","botones3"=>
 						<div class="col-md-6 team-img-w3-agile">
 						</div>
 						<div class="col-md-6 team-Info-agileits">
-							<h4>tusolutionweb</h4>
+							<h4>Gerard Smith</h4>
 							<span>Gerente
 </span>
-							<p>Lorem ipsum dolor sit amet, elit adipiscing del consectetur, tempor sed y vitalidad, por lo que el trabajo y dolor, algunas cosas importantes que hacer eiusmod. A través de los años por venir, equipo quis.Lorem
-.</p>
+							<p>Camaná in ofrece experiencias inigualables, un servicio excepcional, una gastronomía exclusiva y un diseño sofisticado en destinos exclusivos.</p>
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
 								<li><a href="<?php echo $urlFacebook?>" class="fa fa-facebook icon-border facebook"> </a></li>
@@ -355,8 +379,7 @@ $botones = array("botones1"=>"Acerca de","botones2"=>"Contamos con","botones3"=>
 							<h4>Sarah Connor</h4>
 							<span>Recepcionista
 </span>
-							<p>Estamos para ser de  tus vaciones las mej
-							or, porque savemos que te esuferzas trabajando.te ofrecemos lo mejor .</p>	
+							<p>Estamos para ser de  tus vaciones las mejor, porque savemos que te esuferzas trabajando.te ofrecemos lo mejor .</p>	
 						<div class="social-bnr-agileits footer-icons-agileinfo">
 							<ul class="social-icons3">
 								<li><a href="<?php echo $urlFacebook?>" class="fa fa-facebook icon-border facebook"> </a></li>
